@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(55, 255, 0); */
+}
+.container{
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    display: grid;
+    
+
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    /* border: 2px solid red;    */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 30px;
+
+}
+.navbar .logo{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid rgb(68, 255, 0); */
+}
+.logo img{
+    height: 30%;
+    /* background-color: black; */
+}
+.logo h5{
+    font-size: 1.6rem;
+}
+.navbar ul{
+    height: 40%;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.678);
+}
+.navbar .btn{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.btn button{
+    height: 48%;
+    width: 35%;
+    border-radius: 10px;
+}
+.btn button:last-child{
+    width: 43%;
+    background-color: black;
+    color: white;
+}
+.hero{
+    height:500px;
+    width: 100%;
+    background-color:whitesmoke;
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    /* gap: 20px; */
+    font-size: 1.3rem;
+
+
+}
+.hero h1{
+    font-size: 3.5rem;
+}
+.hero h5{
+    color: rgba(97, 97, 227, 0.752);
+}
+.hero p{
+    color: rgba(0, 0, 0, 0.766);
+    
+}
+.hero .btn-2{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding-block: 30px; */
+
+
+    
+    
+}
+.btn-2 button{
+    height: 50px;
+    width: 140px;
+    border-radius: 10px;
+   
+}
+.btn-2 button:first-child{
+    background-color: black;
+    color: white;
+}
+.boxes{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    justify-content: space-evenly;
+    /* border: 2px solid rgb(210, 40, 40); */
+}
+.box{
+    border: 2px solid rgba(0, 0, 0, 0.147);
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.img{
+    height: 60%;
+    width: 100%;
+    background-color: whitesmoke;
+    /* border: 2px solid rgb(40, 210, 48); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    
+    
+}
+.img img:first-child{
+    height: 100px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* responsiv at 768px */
+@media (max-width: 768px){
+   .navbar{
+    padding: 0;
+    text-align: center;
+   }
+   .logo img{
+    height: 53%;
+   }
+   .navbar ul{
+    width: 53%;
+   }
+   .navbar .btn{
+    height: 74%;
+    width: 22%;
+   }
+   .btn button:last-child{
+    height: 30px;
+    width: 90px;
+   }
+   .hero h1 {
+    font-size: 2.5rem;
+}
+.hero p {
+    text-align: center;
+    font-size: 1.01rem;
+}
+.btn-2 button {
+    height: 42px;
+    width: 116px;
+    
+}
+.boxes .box{
+    margin-top: 10px;
+}
+}
+
+/* responsiv at 480px */
+@media (max-width:480px){
+    .container{
+        height: auto;
+        width: 100%;
+    }
+    .navbar{
+        height: auto;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar .logo{
+        width: 55px;
+    }
+    .navbar img{
+        height: 40px;
+    }
+    .navbar ul{
+        display: none;
+    }
+    .navbar .btn{
+        width: 30%;
+        height: 48px;
+    }
+    .btn:last-child{
+        height: 55px;
+        width: 200px;
+    }
+    .hero {
+        font-size: 1rem ;
+        padding-block: 10px;
+    }
+    .hero h1{
+        font-size: 1.7rem;
+        padding-block: 10px;
+    }
+    .hero h5{
+        padding-block: 10px;
+    }
+    .hero p{
+        font-size: 0.9rem;
+        padding-block: 10px;
+    }
+    .hero .btn-2{
+        width: 200px;
+        height: auto;
+        padding-block: 10px;
+    }
+    .btn-2 button{
+         height: 30px;
+    }
+    .boxes .box{
+        margin-top: 20px;
+        
+             
+    }
+
+}
